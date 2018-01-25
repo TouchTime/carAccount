@@ -1,0 +1,148 @@
+page{
+  background:#f5f5f7;
+}
+.container-list{
+  background:#fff;
+  padding-top:43rpx;
+}
+.money-list{
+  display: flex;
+  direction: column;
+}
+.container-list{
+  text-align: center;
+}
+.money-list{
+  margin-top:33rpx;
+}
+.list-name{
+  width:33%;
+}
+.month{
+  font-size: 28rpx;
+  color:#333;
+}
+.month-money{
+  font-size: 52rpx;
+  color:#ff5a00;
+  font-weight: 600;
+  margin-top:10rpx;
+}
+.list-car{
+  font-size: 24rpx;
+  color:#333;
+}
+.list-sum{
+  font-size: 30rpx;
+  color:#333;
+  font-weight: 600;
+  padding:10rpx 0 40rpx;
+}
+.list-titles {
+  color: #999;
+  font-size: 26rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  padding-left: 30rpx;
+}
+
+.msg-lists {
+  background: #fff;
+}
+
+.all-data {
+  margin-left: 30rpx;
+}
+
+.custody {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.single-sum {
+  border-bottom: 1rpx solid #dfe3e6;
+  height: 100rpx;
+  line-height: 100rpx;
+  clear: both;
+}
+
+.single-input{
+  color: #b2b2b2;
+  font-size: 28rpx;
+  display: inline-block;
+  float: right;
+  text-align: right;
+  margin-right: 30rpx;
+  margin-top: 26rpx;
+}
+
+.select-date {
+  display: inline-block;
+}
+
+.picker, picker {
+  display: inline-block;
+}
+
+.select-date {
+  float: right;
+  margin-right: 30rpx;
+  line-height: 100rpx;
+  font-size: 26rpx;
+}
+
+.select-current {
+  width: 80rpx;
+  height: 60rpx;
+  padding: 8rpx 16rpx;
+  border: 1rpx solid #4697fb;
+  border-radius: 10rpx 0 0 10rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #4697fb;
+}
+
+.select-currents {
+  width: 80rpx;
+  height: 60rpx;
+  padding: 8rpx 16rpx;
+  border: 1rpx solid #4697fb;
+  border-radius: 0 10rpx 10rpx 0;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #4697fb;
+}
+
+.actives {
+  background: #4697fb;
+  color: #fff;
+}
+
+picker {
+  float: right;
+  margin-right: 30rpx;
+}
+
+.picker text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.location {
+  display: inline-block;
+  width: 14rpx;
+  height: 25rpx;
+  padding-left: 15rpx;
+}
+
+.custody-data {
+  display: inline-block;
+  color: #333;
+  float: right;
+  margin-right: 30rpx;
+  font-size: 28rpx;
+  clear: both;
+}
+.activeColor{
+  color:#333!important;
+}

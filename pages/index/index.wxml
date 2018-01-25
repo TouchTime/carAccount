@@ -1,0 +1,65 @@
+<view class="container">
+  <view class="container-list">
+    <view class="month">每月月供(元)</view>
+    <view class="month-money">{{monthMoney}}</view>
+    <view class="money-list">
+      <view class="list-name">
+        <view class="list-car">首付总车款(元)</view>
+        <view class="list-sum">{{carMoney}}</view>
+      </view>
+      <view class="list-name">
+        <view class="list-car">支付利息(元)</view>
+        <view class="list-sum">{{interest}}</view>
+      </view>
+      <view class="list-name">
+        <view class="list-car">还款总额(元)</view>
+        <view class="list-sum">{{repayment}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="list-titles">计算结果已加入购置税、车船使用税、交强险、上牌费</view>
+  <view class="msg-lists">
+    <view class="all-data">
+      <view class="single-sum">
+        <text class="custody">裸车价格(元)</text>
+        <input type="digit" placeholder="请输入金额" class="single-input {{black?'':'activeColor'}}" value="{{money}}" bindchange="moneyChange" maxlength='8' bindinput="bindReplaceInput"></input>
+      </view>
+      <view class="single-sum single-type">
+        <text class="custody">首付比例</text>
+        <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+          <view class="picker">
+            <text>{{array1[index1]}}成</text>
+            <image src="/images/href.png" class="location" />
+          </view>
+        </picker>
+      </view>
+      <view class="single-sum single-deadline">
+        <text class="custody">贷款年限</text>
+        <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+          <view class="picker">
+            <text>{{array2[index2]}}年</text>
+            <image src="/images/href.png" class="location" />
+          </view>
+        </picker>
+      </view>
+      <view class="single-sum annualRate">
+        <text class="custody">贷款利率(%)</text>
+        <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}">
+          <view class="picker">
+            <text>{{array5[index3]}}</text>
+            <image src="/images/href.png" class="location" />
+          </view>
+        </picker>
+      </view>
+      <view class="single-sum annualRate">
+        <text class="custody">汽车排量(T/L)</text>
+        <picker bindchange="bindPickerChange4" value="{{index4}}" range="{{array4}}">
+          <view class="picker">
+            <text>{{array4[index4]}}</text>
+            <image src="/images/href.png" class="location" />
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>
